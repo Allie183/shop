@@ -28,6 +28,27 @@
     font-size: 10px;
     color: rgb(82, 79, 79);
 }
+.search{
+	position: absolute;
+	top: 10px;
+	width: 40px;
+	height: 40px;
+	right: 130px;
+}
+.top{
+	position: absolute;
+	top: 10px;
+	width: 40px;
+	height: 40px;
+	right: 75px;
+}
+.vip{
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	top: 10px;
+	right: 10px;
+}
 form{
     position: absolute;
     top: 15%;
@@ -120,5 +141,109 @@ button.car:hover{
   	border-top: 2px solid #ccc;
   	border-bottom: 2px solid #ccc;
 }
+.slideshow{
+	width: 400px;
+	height: 400px;
+	position: absolute;
+	margin: auto;
+	margin-top: 3%;
+	margin-bottom: 3%;
+	top: 10%;
+	left: 25%;
+	
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	padding: 16px;
+	margin-top: -22px;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	border-radius: 0 2px 2px 0;
+	user-select: none;
+  }
+  
+  
+  .next {
+	right: 0;
+	border-radius: 2px 0 0 2px;
+  }
+  
+  
+  
+  
+  
+  .text {
+	color: #f2f2f2;
+	font-size: 15px;
+	padding: 8px 12px;
+	position: absolute;
+	bottom: 8px;
+	width: 100%;
+	text-align: center;
+  }
+  
+  
+  .numbertext {
+	color: #f2f2f2;
+	font-size: 12px;
+	padding: 8px 12px;
+	position: absolute;
+	top: 0;
+  }
+  
+  
+.dott{
+	position: absolute;
+	top: 75%;
+	left: 35%;
+}
+  .dot {
+	
+	top: 30%;
+	cursor: pointer;
+	height: 15px;
+	width: 15px;
+	
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+	background-color: #717171;
+  }
+  
+  
+  .fade {
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1.5s;
+	animation-name: fade;
+	animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+	from {opacity: .4} 
+	to {opacity: 1}
+  }
+  
+  @keyframes fade {
+	from {opacity: .4} 
+	to {opacity: 1}
+  }
+  
+  
+  @media only screen and (max-width: 300px) {
+	.prev, .next,.text {font-size: 12px}
+  }
+
+
 
 
