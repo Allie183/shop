@@ -16,7 +16,7 @@ body {
   height: 500px;
   position: relative;
   margin: auto;
-  margin-top: 3%;
+  margin-top: 5%;
   margin-bottom: 3%;
   
 }
@@ -134,6 +134,25 @@ body {
     }
 .brand:hover{
     font-weight:bolder;
-    
-   
+}
+.search{
+	position: absolute;
+	top: 10px;
+	width: 40px;
+	height: 40px;
+	right: 130px;
+}
+.top{
+	position: absolute;
+	top: 10px;
+	width: 40px;
+	height: 40px;
+	right: 75px;
+}
+.vip{
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	top: 10px;
+	right: 10px;
 }

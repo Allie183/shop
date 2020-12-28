@@ -201,7 +201,7 @@ button.car:hover{
   
 .dott{
 	position: absolute;
-	top: 75%;
+	top: 80%;
 	left: 35%;
 }
   .dot {
@@ -243,7 +243,20 @@ button.car:hover{
   @media only screen and (max-width: 300px) {
 	.prev, .next,.text {font-size: 12px}
   }
-
-
+.salepage{
+	width: 1200px;
+}
+.b{
+	position: absolute;
+	left: 23%;
+    margin-top: 30%;
+    overflow: auto;
+}
+.b p{
+	width: 250px;
+	 font-size: 14px;
+	 top: 250px;
+	 
+ }
 
 
