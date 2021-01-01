@@ -201,7 +201,7 @@ button.car:hover{
   
 .dott{
 	position: absolute;
-	top: 80%;
+	top: 85%;
 	left: 35%;
 }
   .dot {
@@ -250,7 +250,8 @@ button.car:hover{
 	position: absolute;
 	left: 23%;
     margin-top: 30%;
-    overflow: auto;
+	overflow: auto;
+	display: flex;
 }
 .b p{
 	width: 250px;
@@ -258,5 +259,7 @@ button.car:hover{
 	 top: 250px;
 	 
  }
-
+.size{
+	width: 500px;
+}
 
