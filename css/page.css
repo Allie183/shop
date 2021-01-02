@@ -262,4 +262,152 @@ button.car:hover{
 .size{
 	width: 500px;
 }
+#shopping-cart-detail{
+	display: none;
+	position: absolute;
+	top:50px;
+	right: 0;
+	height: calc(100% - 50px);
+	width: 300px;
+	background-color: rgba(255,255,255,0.8);
+    z-index: 99;
+}
 
+.detail-container{
+	display: flex;
+	flex-direction: column;
+}
+
+.beautiful-button{
+	border:0;
+	border-radius: 5px;
+	background-color: skyblue;
+	text-align: center;
+	margin-top: 30px;
+	padding:5px;
+	width: 100px;
+	height: 40px;
+	
+}
+
+.product-in-cart{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.product-in-cart img{
+	position: relative;
+    width: 150px;
+    height: 150px;
+    margin-right: 50px;
+    transition: all .15s ease-out;
+    transform:scale(1,1);
+}
+
+.detail-button-container{
+	display: flex;
+	justify-content: space-around;
+}
+
+.pay-title{
+	        width:100%;
+	    	height:100px;
+	    	line-height:100px;
+	    	font-size:32px;
+	    	font-weight:500;
+	    	text-align:center;
+}
+
+.pay{
+	width:80%;
+	margin-right:auto;
+	margin-left:auto;
+	margin-top:120px;
+}
+
+.pay-inside{
+	display:flex;
+}
+.pay-table{
+	width:48%;
+	text-align:center;
+	margin-right:1%;
+	margin-left:1%;
+
+}
+.pay-table table{
+	width:100%;
+}
+.pay-table table th{
+	border-bottom:1px solid black;
+	width:33.333333333%;
+	font-size:22px;
+}
+.pay-table table td{
+	font-size:18px;
+}
+.pay-main{
+	width:48%;
+	text-align:center;
+	margin-right:1%;
+	margin-left:1%;
+}
+.pay-main table{
+	width:100%;
+}
+.pay-main th{
+	font-size:24px;
+	width:40%;
+	padding:10px;
+}
+.pay-main .border-bottom{
+	border-bottom:1px solid #696969;
+}
+.pay-select{
+	margin-top:10px;
+	text-align:left;
+}
+.pay-select > p{
+	font-size:20px;
+	width:100%;
+	background-color:#F5F5F5;
+	padding:5px;
+}
+.pay-main .location,.deliver,.pay{
+	display:flex;
+	margin-top:5px;
+}
+.pay-main .location,.deliver,.pay p{
+	padding:5px;
+	font-size:18px;
+}
+.pay-main .location input{
+	margin-left:60px;
+	height:30px;
+	font-size:15px;
+}
+.pay-main .deliver select{
+	margin-left:24px;
+	height:30px;
+	font-size:15px;
+}
+.pay-main .pay select{
+	margin-left:18px;
+	height:30px;
+	font-size:15px;
+}
+.pay-main .buy-now{
+	border-top:1px solid black;
+	padding-top:10px;
+	text-align:center;
+}
+.pay-main .buy-now input{
+	width:240px;
+	height:40px;
+	font-size:20px;
+	color:white;
+	font-weight:500;
+	background-color:#228B22;
+}
