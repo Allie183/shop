@@ -119,21 +119,27 @@ body {
 .page{
     position: absolute;
     margin-top: 20px;
+    padding-left: 70px;
     left: 4%;
 }
 .brand{	
     font-family: monospace;
     font-size: 24px;
+    text-align: center;
     color:#615959;			
     display: inline;
     background-color:  rgb(248, 248, 248);
     border-radius: 5px;
-    margin: 40px 15px 0px 15px;
-    margin-right: 60px;
-    padding:5px 20px; 
+    margin: 80px 100px 0px 15px;
+    margin-right: 100px;
+    padding:5px 20px
     }
 .brand:hover{
     font-weight:bolder;
+}
+.brand,span{
+  margin-left: 18px;
+  margin-right: 10px;
 }
 .search{
 	position: absolute;
