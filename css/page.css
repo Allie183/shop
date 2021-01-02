@@ -78,17 +78,20 @@ form h2{
 	color:white;
 	font-weight:bolder;
 }
+
 .amount{
-	margin-bottom:20px;
+	margin-bottom:10px;
 	position:relative;
 }
 .q {
 	width: 130px;
-	height: 55px;
+	height: 50px;
 	text-align: center;
+	bottom: 300px;
 	border: 0;
 	border: 2px solid black;
 }
+
 .pm {
     font-size: 30px;
 	width: 50px;
