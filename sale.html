@@ -48,15 +48,51 @@
         <a href="">
             <img class="search" src="image/search.png" alt="">
         </a>
-        <a href="">
-            <img class="top" src="image/car.png" alt="">
-        </a>
+        <img class="top" src="image/car.png" onclick="show_cart()" alt="">
         <a href="">
             <img class="vip" src="image/vip.png" alt="">
         </a>
         
 
     </div>
+    <div id="shopping-cart-detail">
+
+        <div class="detail-container">
+            <div class="detail-button-container">
+                <button class="beautiful-button" onclick="close_cart()">Send</button>
+                <button class="beautiful-button" onclick="close_cart()">Close</button>
+            </div>
+            <div class="product-in-cart">
+                <p>
+                    純棉寬鬆長袖拉鍊連帽外套
+                </p>
+                <img src="image/wv1.jpg" alt="">
+            </div>
+            <div class="product-in-cart">
+                <p>
+                    羽絨立領保暖外套
+                </p>
+                <img src="image/wv5.jpg" alt="">
+            </div>
+        </div>
+        
+    </div>
+    <script>
+        var cart_state = false;
+        function show_cart(){
+            if(cart_state){
+                close_cart();
+                cart_state = !cart_state;
+            }
+            else{
+                document.getElementById("shopping-cart-detail").style.display ="block";
+                cart_state = !cart_state;
+            }
+        }
+        function close_cart(){
+            document.getElementById("shopping-cart-detail").style.display = "none";
+        }
+    </script>
     <div class="salepage">
         <div class="a">
             <div>
@@ -171,6 +207,25 @@
                    </b>
                 </p>
             </div>
+
+        </div>
+        <div class="c">
+            <div>
+                <a href="makeup1.html">
+                    <img class="aa" src="image/romand3.jpg" alt="">
+                </a>
+                <p>[ROMAND] Zero Velvet Tint</p>
+                <p>
+                   <b>NT$ 199
+                       <s id="ComparePrice">
+                         <span class=money >NT$ 249 </span>
+                       </s>
+                   </b>
+                </p>
+                
+                
+               
+               </div>
 
         </div>
        

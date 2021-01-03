@@ -1,4 +1,6 @@
-
+body{
+	overflow-x: hidden;
+}
 .a{
     position: absolute;
     left: 23%;
@@ -113,8 +115,6 @@ form h2{
 	background: #fff;
 	border-radius:5px;
 }
-
-
 button.car{
 	height:50px;
 	width:230px;
@@ -139,6 +139,7 @@ button.car:hover{
 	font-weight:bolder;
 }
 
+
 .tab {
   	overflow: hidden;
   	border-top: 2px solid #ccc;
@@ -154,7 +155,7 @@ button.car:hover{
 	top: 10%;
 	left: 25%;
 	
-  }
+}
   
   /* Next & previous buttons */
   .prev, .next {
@@ -252,7 +253,7 @@ button.car:hover{
 .b{
 	position: absolute;
 	left: 23%;
-    margin-top: 30%;
+	margin-top: 30%;
 	overflow: auto;
 	display: flex;
 }
@@ -413,4 +414,38 @@ button.car:hover{
 	color:white;
 	font-weight:500;
 	background-color:#228B22;
+}
+.ratings {
+	position: relative;
+	vertical-align: middle;
+	margin-top: -4%;
+	display: inline-block;
+	color: #ddd; /*背景星星顏色*/
+	overflow: hidden;
+	font-size: 30px; /*調整字體大小可放大縮小星星*/
+	text-shadow: 0px 1px 0 #999;
+}
+.full_star {
+	
+	position: absolute;
+	left: 0;
+	top: 0;
+	white-space: nowrap;
+	overflow: hidden;
+	color: #D56A16; /*前景星星顏色*/
+}
+.detail{
+	position: absolute;
+	left: 25%;
+	top: 90%;
+    margin-top: 5%;
+    overflow: auto;
+    display: flex;
+}
+.c{
+	position: absolute;
+	left: 23%;
+	margin-top: 55%;
+	overflow: auto;
+	display: flex;
 }

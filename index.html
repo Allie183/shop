@@ -13,15 +13,55 @@
 </head>
 <body>
   <div style="margin-top: 60px;">
-    <a href="">
-        <img class="search" src="image/search.png" alt="">
-    </a>
-    <a href="buy.html">
-        <img class="top" src="image/car.png" alt="">
-    </a>
-    <a href="">
-        <img class="vip" src="image/vip.png" alt="">
-    </a>
+    <div>
+      <a href="">
+          <img class="search" src="image/search.png" alt="">
+      </a>
+      <img class="top" src="image/car.png" onclick="show_cart()" alt="">
+      <a href="">
+          <img class="vip" src="image/vip.png" alt="">
+      </a>
+      
+
+  </div>
+  <div id="shopping-cart-detail">
+
+      <div class="detail-container">
+          <div class="detail-button-container">
+              <button class="beautiful-button" onclick="close_cart()">Send</button>
+              <button class="beautiful-button" onclick="close_cart()">Close</button>
+          </div>
+          <div class="product-in-cart">
+              <p>
+                  純棉寬鬆長袖拉鍊連帽外套
+              </p>
+              <img src="image/wv1.jpg" alt="">
+          </div>
+          <div class="product-in-cart">
+              <p>
+                  羽絨立領保暖外套
+              </p>
+              <img src="image/wv5.jpg" alt="">
+          </div>
+      </div>
+      
+  </div>
+  <script>
+      var cart_state = false;
+      function show_cart(){
+          if(cart_state){
+              close_cart();
+              cart_state = !cart_state;
+          }
+          else{
+              document.getElementById("shopping-cart-detail").style.display ="block";
+              cart_state = !cart_state;
+          }
+      }
+      function close_cart(){
+          document.getElementById("shopping-cart-detail").style.display = "none";
+      }
+  </script>
   </div>
   <div class="ad">
   <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" >
@@ -88,6 +128,69 @@
         
     </ul>
     </div>
+    <div class="hot">
+     
+
+      <p class="pop"> popularity charts</p>
+  
+      
+      
+          
+            <div class="a">
+              <div>
+                <p style="text-align: center;">NO.1</p>
+               <a href="sale1.html">
+                 <img class="aa" src="image/wv1.jpg" alt="">
+               </a>
+               <p>WV PROJECT 純棉寬鬆拉鍊連帽外套</p>
+               
+              </div>
+               <div>
+  
+                <p  style="text-align: center;">NO.2</p>
+               <a href="sale2.html">
+                     <img class="aa" src="image/wv3.jpg" alt="">
+               </a>
+               <p>WV PROJECT 羔羊絨連帽鋪棉保暖外套</p>
+               
+              </div>
+              <div>
+                <p  style="text-align: center;">NO.3</p>
+               <a href="sale3.html">
+                     <img class="aa" src="image/wv5.jpg" alt="">
+               </a>
+               <p>WV PROJECT 羽絨立領保暖外套</p>
+               
+              </div>
+              <div>
+                <p  style="text-align: center;">NO.4</p>
+               <a href="sale4.html">
+                     <img class="aa" src="image/wv7.jpg" alt="">
+               </a>
+               <p>WV PROJECT 純棉內刷毛寬鬆長袖衛衣</p>
+               
+              </div>
+              <div>
+                <p style="text-align: center;">NO.5</p>
+                <a href="top4.html">
+                      <img class="aa" src="image/fcmm6.jpg" alt="">
+                </a>
+                <p>FCMM 長袖短版上衣</p>
+                
+               </div>
+          </div>
+         
+      </div>
+            
+          
+          
+            
+            
+          </div>
+        
+        
+     
+      </div>
     
   
  
