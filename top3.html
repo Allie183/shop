@@ -6,6 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/activity.css">
     <link rel="stylesheet" href="css/page.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <header>
         <a href="https://allie183.github.io/shop/.">
         <img class="logo" src="image/bear.png" alt="">
@@ -43,6 +44,28 @@
             </ul>
         
       </header>
+      <script>
+        $(function(){
+            var t = $("#quantity");
+            $("#add").click(function(){
+                t.val(parseInt(t.val())+1);
+                $("#min").removeAttr("disabled");//當按加1時，解除$("#min")不可讀狀態
+                setTotal();
+            })
+            $("#min").click(function(){
+                       if (parseInt(t.val())>1) {        //判斷數量值大於1時才可以減少
+                        t.val(parseInt(t.val())-1)
+                        }else{
+                        $("#min").attr("disabled","disabled") //當$("#min")為1時，$("#min")不可讀狀態
+                       }
+                setTotal();
+            })
+            function setTotal(){
+                $("#total").html((parseInt(t.val())*3.95).toFixed(2));
+            }
+            setTotal();
+        })
+        </script>
 </head>
 <body>
     <div style="margin-top: 60px;">
@@ -149,13 +172,11 @@
         
         <div class="amount" >
             <p style="font-size:16px">數量</p>
-            <button type="button" class="pm" field="quantity">
-               -
-            </button>
-            <input type="text" name="quantity" value="0" class="q" >
-            <button type="button" class="pm" field="quantity">
-                +
-            </button>
+            <input id="min" name="" type="button" value="-" class="mqty" />
+            <input id="quantity" name="" type="text" value="1" class="qty"/>
+            <input id="add" name="" type="button" value="+" class="pqty"/>    
+            <div><p style="margin-top:20px">庫存數量 : 10</p></div>
+           
             
         </div>
 
