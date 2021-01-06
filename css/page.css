@@ -61,7 +61,9 @@ form h2{
     width: 525px;
 }
 .color{
+	width: 500px;
 	margin-bottom:20px;
+	
 }
 
 .select{
@@ -442,3 +444,28 @@ button.car:hover{
 	overflow: auto;
 	display: flex;
 }
+#button input[type="radio"] {
+	display: none;
+	
+}
+#button label{
+	
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+#button span {
+	display: inline-block;
+	padding: 10px;
+	text-transform: uppercase;
+	border: 2px solid black;
+	border-radius: 3px;
+	color: black;
+}
+  
+#button input[type="radio"]:checked + span {
+	background-color: #696969;
+	color: black;
+	
+}
+  
