@@ -138,13 +138,15 @@
           dots[slideIndex-1].className += " active";
         }
         </script>
-    <form>
+    <form action="addcart.jsp" method="GET">
         <h2>[ONA] ONA 慵懶運動風長褲</h2>
         <b>NT$ 850 
             <s id="ComparePrice">
               <span class=money >NT$ 1,260 </span>
             </s>
         </b>
+        <input type="hidden" name="" value="[ONA] ONA 慵懶運動風長褲">
+        <input type="hidden" name="" value="850">
         <div class="color" style="margin-bottom: 0">
             <p style="font-size:16px">顏色</p>	
             
@@ -160,12 +162,10 @@
         <div class="size">
             <p style="font-size:16px">尺寸</p>	
             
-            <button type="button" class="select">
-                M
-            </button>
-            <button type="button" class="select">
-                L
-            </button>
+            <select name="" id="" style="font-size: 16px;">
+                <option value="M">M</option>
+                <option value="L">L</option>
+            </select>
 
         </div>
         

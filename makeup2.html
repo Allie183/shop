@@ -138,8 +138,10 @@
           dots[slideIndex-1].className += " active";
         }
         </script>
-    <form>
+    <form action="addcart.jsp" method="GET">
         <h2>[ROMAND]  果漾微醺腮紅</h2>
+        <input type="hidden" name="" value="[ROMAND]  果漾微醺腮紅">
+        <input type="hidden"  name="" value="239">
         <div class="ratings">
             <div class="empty_star">★★★★★</div>
             <div class="full_star" style="width: 80%;">★★★★★</div>
@@ -153,22 +155,15 @@
         </div>
         <div class="color" style="margin-bottom: 0">
             <p style="font-size:16px">色號</p>	
-            <button type="button" class="select">
-                01 Tangerine
-            </button>
-            <button type="button" class="select">
-                02 Peach
-            </button>
-            <button type="button" class="select">
-                03 Blueberry
-            </button>
-            <button type="button" class="select">
-                04 Fig
-            </button>
-            <button type="button" class="select">
-                05 Cherry
-            </button>
             
+        <p id="button">
+        <label><input type="radio" name="button" value="1"><span>01 Tangerine</span></label>
+        <label><input type="radio" name="button" value="2"><span>02 Peach</span></label>
+        <label><input type="radio" name="button" value="3"><span>03 Blueberry</span></label>
+        <label><input type="radio" name="button" value="4"><span>04 Fig</span></label>
+        <label><input type="radio" name="button" value="5"><span>05 Cherry</span></label>
+        
+        </p>
             
         </div>
         
@@ -189,6 +184,7 @@
         <button type="submit" class="car"  style="margin-top:30px">結帳</button>
          
     </form>
+    
    
    
 </body>

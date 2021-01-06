@@ -11,6 +11,7 @@
 		<div class="pay">
             <p class="pay-title">結帳</p>
             <div class="pay-inside">
+                <form action="buy.jsp" method="GET"></form>
                 <div class="pay-table">
                     <table>
                         <tr>
@@ -56,17 +57,17 @@
                         <div class="deliver">
                             <p>運送方式 :</p>
                             <select size="1" name="deliver-method">
-                                <option>7-11取貨付款(貨到付款)</option>
-                                <option>全家取貨付款(貨到付款)</option>
-                                <option>黑貓宅急便(預設地址)</option>
+                                <option value="7-11取貨付款(貨到付款)">7-11取貨付款(貨到付款)</option>
+                                <option value="全家取貨付款(貨到付款)">全家取貨付款(貨到付款)</option>
+                                <option value="黑貓宅急便(預設地址)">黑貓宅急便(預設地址)</option>
                             </select> 
                         </div>
                         <div class="pay">
                             <p>付款方式 :</p>
                             <select size="1" name="pay-method">
-                                <option>貨到付款</option>
-                                <option>轉帳</option> 
-                                <option>信用卡</option> 
+                                <option value="貨到付款">貨到付款</option>
+                                <option value="轉帳">轉帳</option> 
+                                <option value="信用卡">信用卡</option> 
                             </select> 
                         </div>
                         <div class="buy-now">
@@ -74,5 +75,6 @@
                         </div> 
                     </div>
                 </div>
+                </form>
             </div>
          </div>

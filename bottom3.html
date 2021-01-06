@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <link rel="stylesheet" href="css/activity.css">
-    <title>SHOP</title>
     <link rel="stylesheet" href="css/page.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <header>
@@ -12,7 +12,7 @@
         <img class="logo" src="image/bear.png" alt="">
         </a>
         <ul class="page">
-            <a href="sale.html" style="text-decoration:none">
+                <a href="sale.html" style="text-decoration:none">
                 <li class="brand ">
                     SALE
                 </li></a>
@@ -40,6 +40,7 @@
                 <li class="brand">
                     ABOUT US
                 </li></a>	
+                
             </ul>
         
       </header>
@@ -80,23 +81,18 @@
 
         <div class="mySlides fade">
           
-          <img src="image/shoopen1.jpg" style="width:100%">
+          <img src="image/frnm1.jpg" style="width:100%">
           
         </div>
         
         <div class="mySlides fade">
           
-          <img src="image/shoopen2.jfif" style="width:100%">
-          
-        </div>
-        
-        <div class="mySlides fade">
-          
-          <img src="image/shoopen3.jfif" style="width:100%">
+          <img src="image/frnm2.jpg" style="width:100%">
           
         </div>
         
         
+       
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
         
@@ -106,8 +102,8 @@
         <div class="dott">
           <span class="dot" onclick="currentSlide(1)"></span> 
           <span class="dot" onclick="currentSlide(2)"></span> 
-          <span class="dot" onclick="currentSlide(3)"></span> 
-         
+          
+          
         </div>
         
         <script>
@@ -139,57 +135,35 @@
         }
         </script>
     <form action="addcart.jsp" method="GET">
-        <h2>[SHOOPEN] BEANYS 豌豆三兄弟 帆布鞋</h2>
-        <input type="hiddne" name="id">
-        <div class="ratings">
-            <div class="empty_star">★★★★★</div>
-            <div class="full_star" style="width: 80%;">★★★★★</div>
-        </div>
-        <b style="font-size: 20px;">4.0</b>
-        <div>
-        <b>NT$ 690
-                  
+        <h2>[FRNM] 寬鬆鬆緊腰運動褲</h2>
+        <b>NT$ 750
+           
         </b>
-    </div>
+        <input type="hidden" name="" value="[FRNM] 寬鬆鬆緊腰運動褲">
+        <input type="hidden" name="" value="750">
         <div class="color" style="margin-bottom: 0">
             <p style="font-size:16px">顏色</p>	
-            <button type="button" class="select">
-                White
-            </button>
+            
+            
             <button type="button" class="select">
                 Black
             </button>
-           
-            
             
         </div>
         <div class="size">
             <p style="font-size:16px">尺寸</p>	
-            <button type="button" class="select">
-                230
-            </button>
-            <button type="button" class="select">
-                240
-            </button>
-            <button type="button" class="select">
-                250
-            </button>
-            <button type="button" class="select">
-                260
-            </button>
-            <button type="button" class="select">
-                270
-            </button>
-            <button type="button" class="select">
-                280
-            </button>
+            
+            <select name="" id="" style="font-size: 16px;">
+                <option value="M">M</option>
+                <option value="L">L</option>
+            </select>
 
         </div>
         
         
         <div class="amount" >
             <p style="font-size:16px">數量</p>
-            <input id="min" name="" type="button" value="-" class="mqty" />
+            <input id="min" name="" type="button" value="-" class="mqty"/>
             <input id="quantity" name="" type="text" value="1" class="qty"/>
             <input id="add" name="" type="button" value="+" class="pqty"/>    
             <div><p style="margin-top:20px">庫存數量 : 10</p></div>
