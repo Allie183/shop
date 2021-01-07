@@ -268,8 +268,8 @@ button.car:hover{
 	top:50px;
 	right: 0;
 	height: calc(100% - 50px);
-	width: 300px;
-	background-color: rgba(255,255,255,0.8);
+	width: 350px;
+	background-color: rgb(46, 43, 43);
     z-index: 99;
 }
 
@@ -279,13 +279,16 @@ button.car:hover{
 }
 
 .beautiful-button{
-	border:0;
+	border:solid 3px;
 	border-radius: 5px;
-	background-color: skyblue;
+	border-color: white;
+	background-color: rgb(14, 13, 12);
 	text-align: center;
+	color: white;
+	font-size: 18px;
 	margin-top: 30px;
 	padding:5px;
-	width: 100px;
+	width: 250px;
 	height: 40px;
 	
 }
@@ -294,16 +297,18 @@ button.car:hover{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	align-items: center;
+	
 }
 
 .product-in-cart img{
-	position: relative;
-    width: 150px;
-    height: 150px;
-    margin-right: 50px;
+	position: absolute;
+    width:75px;
+    height: 75px;
+    margin-left: 10px;
     transition: all .15s ease-out;
-    transform:scale(1,1);
+	transform:scale(1,1);
+	
+
 }
 
 .detail-button-container{
@@ -444,12 +449,75 @@ button.car:hover{
 	overflow: auto;
 	display: flex;
 }
+
+.vipcard{
+	width: 250px;
+	height: 180px;
+}
+
+.first{
+	margin-left: 700px;
+}
+
+.headME{
+	padding: 20px 20px;
+	border:1px solid #747271;
+	
+}
+
+
+.mySlidespaper{
+width: 400px;
+height: 625px;
+margin-top:-145px ;
+margin-left:500px;
+position: absolute;
+}
+
+
+.trade{
+	width:70%;
+	height:auto;
+	margin-right:300px;
+	margin-left:300px;
+	margin-top:50px;
+	margin-bottom:50px;
+}
+.trade-title{
+	height:60px;
+	line-height:60px;
+	font-size:32px;
+	font-weight:500;
+	text-align:center;
+	background-color:#fff;
+}
+.trade-main{
+	background-color:#fff;
+	height:400px;
+	border-bottom:1px solid black; 
+}
+
+.trade-1{
+	margin-top:5px;
+}
+.trade-1 table{
+	width:100%;
+	text-align:center;
+	font-size:18px;
+}
+.trade-1 table th{
+text-decoration:underline;
+}
+
+#search{
+	display: none;
+}
 #button input[type="radio"] {
 	display: none;
 	
 }
 #button label{
-	
+	position: relative;
 	margin-top: 20px;
 	margin-bottom: 20px;
 }
@@ -468,4 +536,14 @@ button.car:hover{
 	color: black;
 	
 }
-  
+#search{
+	font-size: 16px;
+	display: none;
+	height: 30px;
+	position: absolute;
+	top: 12px;
+	margin-left: 1100px;
+	background-color:white;
+	border:solid 3px #615959;
+	outline: none;
+}
