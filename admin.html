@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CODY韓國代購</title>
+    <link rel="stylesheet" href="css/back.css">
+    <header>
+     
+    </header>
+</head>
+<body>
+    <div class="tab">
+        <button class="tablinks" onclick="openCity(event, 'order')">訂單瀏覽</button>
+        <button class="tablinks" onclick="openCity(event, 'product')">商品管理</button>
+        
+    </div>
+      
+      <div id="order" class="tabcontent">
+        <h1>訂單瀏覽</h1>
+        
+      </div>
+      
+      <div id="product" class="tabcontent">
+        <h1>商品管理</h1>
+        <button class="pd">新增</button>
+        <button class="pd">修改</button>
+        <button class="pd">刪除</button>
+        
+      </div>
+      <center>
+        <div>
+        <img class="adminpic" src="image/admin.png" alt="">
+      </div>
+      </center>
+      
+      
+      
+      <script>
+      function openCity(evt, cityName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+      </script>
+</body>
+</html>

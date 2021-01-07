@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/activity.css">
-    <title>SHOP</title>
+    <title>CODY韓國代購</title>
     <link rel="stylesheet" href="css/page.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <header>
         <a href="https://allie183.github.io/shop/.">
-        <img class="logo" src="image/bear.png" alt="">
+        <img class="logo" src="image/logo.png" alt="">
         </a>
         <ul class="page">
             <a href="sale.html" style="text-decoration:none">
@@ -32,14 +32,10 @@
                 <li class="brand ">
                     MAKEUP
                 </li></a>
-                <a href="snacks.html" style="text-decoration:none">
-                <li class="brand ">
-                    SNACKS
-                </li></a>
                 <a href="aboutus.html" style="text-decoration:none">
                 <li class="brand">
                     ABOUT US
-                </li></a>	
+                </li></a>
             </ul>
         
       </header>
@@ -68,14 +64,77 @@
 </head>
 <body>
     <div style="margin-top: 60px;">
-        <div>
-          <a href="">
-              <img class="search" src="image/search.png" alt="">
-          </a>
-          <img class="top" src="image/car.png" onclick="show_cart()" alt="">
-          <a href="">
-              <img class="vip" src="image/vip.png" alt="">
-          </a>
+      <div>
+      <img class="search" src="image/search.png" onclick="show_text()" alt=" ">
+      <input type="text" id="search" placeholder="search...">
+      <img class="top" src="image/car.png" onclick="show_cart()" alt="">
+      <a href="login.html">
+          <img class="vip" src="image/vip.png"   alt="">
+      </a>
+    </div>
+    <script>
+      var search_state = false;
+    function show_text(){
+        if(!search_state){
+            document.getElementById("search").style.display="block"
+        }
+        else{
+            document.getElementById("search").style.display="none"
+            
+        }
+        search_state = !search_state;
+    }
+    
+    </script>
+        <div id="shopping-cart-detail">
+          <p style="color: white; margin-left:10px ; text-align: center;">購物車</p>
+          
+         
+          <div class="detail-container">
+              
+              <div class="product-in-cart">
+                  <p style="color: white; word-wrap: break-word;word-break: normal; padding-left: 100px; ">
+                      純棉寬鬆長袖拉鍊連帽外套
+                  </p>
+              
+              
+              <img src="image/wv1.jpg" alt="">
+              <img src="image/x-mark.png" alt="" style="width:20px;height: 20px;margin-left: 325px;">    
+          
+              </div>
+              <br>
+              <br>
+              <div class="product-in-cart">
+                  <p style="color: white; word-wrap: break-word; word-break: normal; padding-left: 100px;">
+                      羽絨立領保暖外套
+                  </p>
+                  <img src="image/wv5.jpg" alt="">
+                  <img src="image/x-mark.png" alt="" style="width:20px;height: 20px;margin-left: 325px;">
+              </div>
+                 <div class="detail-button-container">
+                  <button class="beautiful-button" onclick="close_cart()">訂單結帳</button>
+                  
+              </div>
+          </div>
+          
+        </div>
+        <script>
+          var cart_state = false;
+          function show_cart(){
+              if(cart_state){
+                  close_cart();
+                  cart_state = !cart_state;
+              }
+              else{
+                  document.getElementById("shopping-cart-detail").style.display ="block";
+                  cart_state = !cart_state;
+              }
+          }
+          function close_cart(){
+              document.getElementById("shopping-cart-detail").style.display = "none";
+          }
+        </script>
+          </div>
     <div class="slideshow">
 
         <div class="mySlides fade">
@@ -140,7 +199,7 @@
         </script>
     <form action="addcart.jsp" method="GET">
         <h2>[SHOOPEN] BEANYS 豌豆三兄弟 帆布鞋</h2>
-        <input type="hiddne" name="id">
+        <input type="hidden" name="id">
         <div class="ratings">
             <div class="empty_star">★★★★★</div>
             <div class="full_star" style="width: 80%;">★★★★★</div>
@@ -151,40 +210,30 @@
                   
         </b>
     </div>
-        <div class="color" style="margin-bottom: 0">
-            <p style="font-size:16px">顏色</p>	
-            <button type="button" class="select">
-                White
-            </button>
-            <button type="button" class="select">
-                Black
-            </button>
-           
+    <div class="color" style="margin-bottom: 0">
+        <p style="font-size:16px">顏色</p>	
+        <p id="button">
+            <span style="border: none;"><label><input type="radio" name="button" value="1"><span>White</span></label></span>
+                <span style="border: none;"><label><input type="radio" name="button" value="2"><span>Black</span></label></span>
             
-            
-        </div>
-        <div class="size">
-            <p style="font-size:16px">尺寸</p>	
-            <button type="button" class="select">
-                230
-            </button>
-            <button type="button" class="select">
-                240
-            </button>
-            <button type="button" class="select">
-                250
-            </button>
-            <button type="button" class="select">
-                260
-            </button>
-            <button type="button" class="select">
-                270
-            </button>
-            <button type="button" class="select">
-                280
-            </button>
+              
+            </p>
+       
+        
+        
+    </div>
+    <div class="size">
+        <p style="font-size:16px">尺寸</p>	
+        <p id="button">
+            <span style="border: none;"><label><input type="radio" name="button" value="1"><span>230</span></label></span>
+                <span style="border: none;"><label><input type="radio" name="button" value="2"><span>240</span></label></span>
+                <span style="border: none;"><label><input type="radio" name="button" value="3"><span>250</span></label></span>
+                <span style="border: none;"><label><input type="radio" name="button" value="4"><span>260</span></label></span>
+                <span style="border: none;"><label><input type="radio" name="button" value="5"><span>270</span></label></span>
+                <span style="border: none;"><label><input type="radio" name="button" value="6"><span>280</span></label></span>
+            </p>
 
-        </div>
+    </div>
         
         
         <div class="amount" >

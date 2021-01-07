@@ -8,7 +8,8 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">   
-    
+
+
     
 
     <title>CODY韓國代購</title>
@@ -61,7 +62,7 @@
                      <input type="checkbox" @click="item.select=!item.select;console.log(item.select)" v-bind:checked="item.select" id="">
                    </label>
                  </td>
-                 <td name="name">{{item.name}}</td>
+                 <td name="name"></td>
                  <td>
                    <div class="product-num">
                        <a href="javascript:;" @click="item.num>0?item.num--:0">–</a>
@@ -69,7 +70,7 @@
                        <a href="javascript:;" @click="item.num++">+</a>
                    </div>
                  </td>
-                 <td name="">{{item.price}}</td>
+                 <td name=""></td>
                  <td name="">{{item.price*item.num}}</td>
               </tr>
            </tbody>

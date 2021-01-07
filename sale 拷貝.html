@@ -32,7 +32,7 @@
           <span>MAKEUP</span> 
         </li></a>
        
-        <a href="aboutus.html" style="text-decoration:none;">
+        <a href="aboutus.html" style="text-decoration:none;",>
         <li class="brand">
           <span >ABOUT US</span> 
         </li></a>	
@@ -49,42 +49,32 @@
         <a href="">
             <img class="vip" src="image/vip.png" alt="">
         </a>
-        
 
     </div>
+
     <div id="shopping-cart-detail">
-        <p style="color: white; margin-left:10px ; text-align: center;">購物車</p>
-        
-       
+
         <div class="detail-container">
-            
+            <div class="detail-button-container">
+                <button class="beautiful-button" onclick="close_cart()">Send</button>
+                <button class="beautiful-button" onclick="close_cart()">Close</button>
+            </div>
             <div class="product-in-cart">
-                <p style="color: white; word-wrap: break-word;word-break: normal; padding-left: 100px; ">
+                <p>
                     純棉寬鬆長袖拉鍊連帽外套
                 </p>
-            
-            
-            <img src="image/wv1.jpg" alt="">
-            <img src="image/x-mark.png" alt="" style="width:20px;height: 20px;margin-left: 325px;">    
-        
+                <img src="image/wv1.jpg" alt="">
             </div>
-            <br>
-            <br>
             <div class="product-in-cart">
-                <p style="color: white; word-wrap: break-word; word-break: normal; padding-left: 100px;">
+                <p>
                     羽絨立領保暖外套
                 </p>
                 <img src="image/wv5.jpg" alt="">
-                <img src="image/x-mark.png" alt="" style="width:20px;height: 20px;margin-left: 325px;">
-            </div>
-               <div class="detail-button-container">
-                <button class="beautiful-button" onclick="close_cart()">訂單結帳</button>
-                
             </div>
         </div>
         
-      </div>
-      <script>
+    </div>
+    <script>
         var cart_state = false;
         function show_cart(){
             if(cart_state){
@@ -99,8 +89,7 @@
         function close_cart(){
             document.getElementById("shopping-cart-detail").style.display = "none";
         }
-      </script>
-        </div>
+    </script>
     <div class="salepage">
         <div class="a">
             <div>
@@ -160,81 +149,6 @@
                 </b>
              </p>
             </div>
-            
-        </div>
-        <div class="b">
-            <div>
-                <a href="top2.html">
-                      <img class="aa" src="image/fcmm6.jpg" alt="">
-                </a>
-                <p>[FCMM] Linear cropped long sleeve T-shirt 長袖短版上衣</p>
-                <p>
-                   <b>NT$ 920
-                       <s id="ComparePrice">
-                         <span class=money >NT$ 1,320 </span>
-                       </s>
-                   </b>
-                </p>
-            </div>
-            <div>
-                <a href="shoes1.html">
-                    <img class="aa" src="image/dobi1.jpg" alt="">
-                </a>
-                <p>[23.65] Dobi 厚底復古休閒運動鞋</p>
-                <p>
-                   <b>NT$ 2,680
-                       <s id="ComparePrice">
-                         <span class=money >NT$ 2,960 </span>
-                       </s>
-                   </b>
-                </p>
-            </div>
-            <div>
-                <a href="shoes2.html">
-                      <img class="aa" src="image/mozzi1.jpg" alt="">
-                </a>
-                <p>[23.65] MOZZI 厚底車線帆布鞋</p>
-                <p>
-                   <b>NT$ 1,760
-                       <s id="ComparePrice">
-                         <span class=money >NT$ 2,180 </span>
-                       </s>
-                   </b>
-                </p>
-            </div>
-            <div>
-                <a href="shoes7.html">
-                      <img class="aa" src="image/excelsior5.jpg" alt="">
-                </a>
-                <p>[EXCELSIOR] Excelsior Bolt 2way涼鞋</p>
-                <p>
-                   <b>NT$ 2,180
-                    <s id="ComparePrice">
-                        <span class=money >NT$ 2,960 </span>
-                    </s>
-                   </b>
-                </p>
-            </div>
-
-        </div>
-        <div class="c">
-            <div>
-                <a href="makeup1.html">
-                    <img class="aa" src="image/romand3.jpg" alt="">
-                </a>
-                <p>[ROMAND] Zero Velvet Tint</p>
-                <p>
-                   <b>NT$ 199
-                       <s id="ComparePrice">
-                         <span class=money >NT$ 249 </span>
-                       </s>
-                   </b>
-                </p>
-                
-                
-               
-               </div>
-
         </div>
        
     </div>
@@ -242,3 +156,4 @@
     
 </body>
 </html>
+
