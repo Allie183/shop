@@ -379,11 +379,8 @@ td:hover{
 	position: absolute;
 	left: 70%;
 	color: #000;
-	margin: 30px;
+
 	
-}
-.service tr,td{
-	margin: 30px;
 }
 
 #search{
