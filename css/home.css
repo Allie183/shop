@@ -4,11 +4,14 @@ body {
     overflow-x: hidden;
     width: 1520px;
 }
-.ad{
-	margin-left: auto;
-	margin-right: auto;
+div {
+  display: block;
+}
+div {
+  display: block;
 }
 .image {
+  width: 1520px;
   height: 600px;
   border-style: none;
   width: 100%!important;
@@ -19,7 +22,7 @@ body {
 
 .bar{
     position: absolute;
-    width: 1520px;
+    width: 1700px;
     height: 80px;
     background-color: #686565;
     margin-top: 20px;
@@ -27,7 +30,7 @@ body {
 .page{
     position: absolute;
     margin-top: 20px;
-    padding-left: 150px;
+    padding-left: 70px;
     left: 4%;
 }
 .brand{	
@@ -38,7 +41,7 @@ body {
     display: inline;
     background-color:  rgb(248, 248, 248);
     border-radius: 5px;
-    margin: 80px 100px 0px 35px;
+    margin: 80px 100px 0px 15px;
     margin-right: 100px;
     padding:5px 20px
     }
@@ -50,7 +53,6 @@ body {
   margin-right: 10px;
 }
 .search{
-	font-size: 18px;
 	position: absolute;
 	top: 10px;
 	width: 40px;
@@ -74,12 +76,13 @@ body {
 .hot{
   position: absolute;
   width: 1700px;
-  height:500px;
+  height:800px;
   background-color:black ;
   margin-top: 100px;
-  
 
 }
+
+
 
 .a{
   position: absolute;
@@ -118,13 +121,14 @@ body {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   color: white;
 }
+
 #shopping-cart-detail{
 	display: none;
 	position: absolute;
 	top:50px;
 	right: 0;
 	height: calc(100% - 50px);
-	width: 350px;
+	width: 300px;
 	background-color: rgb(46, 43, 43);
     z-index: 99;
 }
@@ -160,7 +164,7 @@ body {
 	position: absolute;
     width:75px;
     height: 75px;
-    margin-left: 10px;
+    margin-left:20px;
     transition: all .15s ease-out;
 	transform:scale(1,1);
 	
@@ -272,69 +276,7 @@ body {
 	font-weight:500;
 	background-color:#228B22;
 }
-.comment{
-	position: relative;
-	width: auto;
-	height: 300px;
-}
-.smart-green{
-	position: relative;
-	
-}
-.text{
-	position: absolute;
-	top: 165%;
-	width: 1700px;
-	height: 450px;
-	padding: 25px;
-	background-color: rgb(38, 35, 46);
-}
-.table1{
-	position: absolute;
-	padding: 10px;
-	font-size: 18px;
-	border-radius: 20px;
-	
-}
-.error{
-	border-style: dashed;
-	border-radius:20px ;
-	font-weight: bolder;
-	padding-left: 10px; ;
-	outline: none;
-}
-.error:hover{
-	border-style: dotted;
-}
-.sub{
-	margin-right: 20px;
-	border: none;
-	border-radius: 20px;
-	padding: 5px 15px;
-	outline: none;
-}
-.sub:hover{
-	background-color: #ddd;
-	color: rgb(114, 144, 241);
-	font-weight: bolder;
-}
-.sub:active{
-	transform: translateY(4px);
-}
-tr,td{
-	font-weight: bolder;
-	padding: 10px 20px;
-}
-td:hover{
-	color: #696969;
-}
-.table2{
-	position: absolute;
-	left: 30%;
-	padding: 10px;
-	font-size:18px ;
-	border-radius: 20px;
-}
+
 .login-detail{
 	display: none;
 	position: absolute;
@@ -345,6 +287,14 @@ td:hover{
 	background-color: rgba(255,255,255,0.8);
     z-index: 99;
 }
+
+.b{
+	position: absolute;
+	width: 1700px;
+	height:100px;
+	background-color: lightgrey;
+}
+
 .footer{
 	position: absolute;
 	width: 1700px;
@@ -355,11 +305,11 @@ td:hover{
 
 #search{
 	display: none;
-	height: 40px;
 	position: absolute;
 	top: 12px;
-	margin-left: 1100px;
+	margin-left: 880px;
 	background-color:white;
 	border:solid 3px #615959;
 	outline: none;
+
 }

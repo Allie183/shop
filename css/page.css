@@ -61,9 +61,7 @@ form h2{
     width: 525px;
 }
 .color{
-	width: 500px;
 	margin-bottom:20px;
-	
 }
 
 .select{
@@ -511,39 +509,4 @@ text-decoration:underline;
 
 #search{
 	display: none;
-}
-#button input[type="radio"] {
-	display: none;
-	
-}
-#button label{
-	position: relative;
-	margin-top: 20px;
-	margin-bottom: 20px;
-}
-
-#button span {
-	display: inline-block;
-	padding: 10px;
-	text-transform: uppercase;
-	border: 2px solid black;
-	border-radius: 3px;
-	color: black;
-}
-  
-#button input[type="radio"]:checked + span {
-	background-color: #696969;
-	color: black;
-	
-}
-#search{
-	font-size: 16px;
-	display: none;
-	height: 30px;
-	position: absolute;
-	top: 12px;
-	margin-left: 1100px;
-	background-color:white;
-	border:solid 3px #615959;
-	outline: none;
 }
