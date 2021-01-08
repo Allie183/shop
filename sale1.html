@@ -6,6 +6,7 @@
     <title>CODY韓國代購</title>
     <link rel="stylesheet" href="css/activity.css">
     <link rel="stylesheet" href="css/page.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <header>
@@ -255,11 +256,8 @@
     <form action="addcart.jsp" method="GET">
         <h2>[WV PROJECT] Dust pigment Hood zipup 純棉寬鬆長袖拉鍊連帽外套</h2>
         <input type="hidden" name="id">
-        <div class="ratings">
-            <div class="empty_star">★★★★★</div>
-            <div class="full_star" style="width: 80%;">★★★★★</div>
-        </div>
-        <b style="font-size: 20px;">4.0</b>
+        
+        
         <div><b>NT$ 1,720 
             <s id="ComparePrice">
               <span class=money >NT$ 1,760 </span>
@@ -278,15 +276,7 @@
            
             
         </div>
-        <div class="size">
-            <p style="font-size:16px">尺寸</p>	
-            <p id="button">
-            <span style="border: none;"><label><input type="radio" name="button" value="1"><span>S</span></label></span>
-                <span style="border: none;"><label><input type="radio" name="button" value="2"><span>M</span></label></span>
-                <span style="border: none;"><label><input type="radio" name="button" value="3"><span>L</span></label></span>
-            </p>
-           
-        </div>
+     
         
        
         <div class="amount" >
@@ -303,9 +293,16 @@
         <button type="submit" class="car"  style="margin-top:30px">加入購物車</button>
         
         <button type="submit" class="car"  style="margin-top:30px">結帳</button>
-         
+          
     </form>
     <div class="detail">
+       <div class="rating">
+        <input type="radio" name="star" id="star1"><label for="star1"></label>
+        <input type="radio" name="star" id="star2"><label for="star2"></label>
+        <input type="radio" name="star" id="star3"><label for="star3"></label>
+        <input type="radio" name="star" id="star4"><label for="star4"></label>
+        <input type="radio" name="star" id="star5"><label for="star5"></label>
+       </div>
        
 
     </div>

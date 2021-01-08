@@ -153,7 +153,7 @@ button.car:hover{
 	
 }
   
-  /* Next & previous buttons */
+ 
   .prev, .next {
 	cursor: pointer;
 	position: absolute;
@@ -470,6 +470,12 @@ button.car:hover{
 	overflow: auto;
 	display: flex;
 }
+.c p{
+	width: 250px;
+	 font-size: 14px;
+	 top: 250px;
+	 
+}
 
 .vipcard{
 	width: 250px;
@@ -483,7 +489,6 @@ button.car:hover{
 .headME{
 	padding: 20px 20px;
 	border:1px solid #747271;
-	
 }
 
 
