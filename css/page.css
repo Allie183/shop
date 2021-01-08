@@ -61,7 +61,9 @@ form h2{
     width: 525px;
 }
 .color{
+	width: 500px;
 	margin-bottom:20px;
+	
 }
 
 .select{
@@ -414,25 +416,46 @@ button.car:hover{
 	font-weight:500;
 	background-color:#228B22;
 }
-.ratings {
-	position: relative;
-	vertical-align: middle;
-	margin-top: -4%;
-	display: inline-block;
-	color: #ddd; /*背景星星顏色*/
-	overflow: hidden;
-	font-size: 30px; /*調整字體大小可放大縮小星星*/
-	text-shadow: 0px 1px 0 #999;
-}
-.full_star {
-	
+.rating {
 	position: absolute;
-	left: 0;
-	top: 0;
-	white-space: nowrap;
-	overflow: hidden;
-	color: #D56A16; /*前景星星顏色*/
+	top:50%;
+	left: 50%;
+	transform: translate(-50%,-50%) rotateY(180deg);
+	display: flex;
 }
+.rating input{display:none;}
+.rating label{
+	display: block;
+	cursor: pointer;
+	width: 50px;
+	background:rgba(255, 255, 255, 0);
+
+}
+.rating label:before
+{
+	content:'★';
+	position: relative;
+	display: block;
+	font-size: 50px;
+	color: #000;
+}
+.rating label:after
+{
+	content:'★';
+	position: absolute;
+	display: block;
+	font-size: 52px;
+	color: rgb(255, 238, 0);
+	top: 0;
+	opacity: 0;
+	transition: .3s;
+	text-shadow: 0 2px 5px rgba(0,0,0,.5);
+}
+.rating label:hover:after,
+.rating label:hover ~ label:after,
+.rating input:checked ~ label:after
+{opacity: 1;}
+
 .detail{
 	position: absolute;
 	left: 25%;
@@ -509,4 +532,39 @@ text-decoration:underline;
 
 #search{
 	display: none;
+}
+#button input[type="radio"] {
+	display: none;
+	
+}
+#button label{
+	position: relative;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+#button span {
+	display: inline-block;
+	padding: 10px;
+	text-transform: uppercase;
+	border: 2px solid black;
+	border-radius: 3px;
+	color: black;
+}
+  
+#button input[type="radio"]:checked + span {
+	background-color: #696969;
+	color: black;
+	
+}
+#search{
+	font-size: 16px;
+	display: none;
+	height: 30px;
+	position: absolute;
+	top: 12px;
+	margin-left: 1100px;
+	background-color:white;
+	border:solid 3px #615959;
+	outline: none;
 }

@@ -12,15 +12,22 @@ header
   float: left;
 }
 .logo{
-  width: 70%;
+  width: 50%;
   position: relative;
-  left: 15%;
+  top: 5%;
+  left: 22%;
+  bottom: 50px;
 }
 ul{
+  margin-top: 50px;
   font-size: 24px;
   list-style: none;
 }
-.brand{	font-family: monospace;
+.page{
+  margin-top: 100px;
+}
+.brand{	
+  font-family: monospace;
   font-size: 18px;
   color:#615959;			
   margin: 10px 15px 0px 15px;
