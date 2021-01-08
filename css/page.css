@@ -316,10 +316,23 @@ button.car:hover{
 	justify-content: space-around;
 }
 
-
+.text1{
+	position: absolute;
+	top: 100%;
+	left: 25%;
+	width: 1700px;
+	height: 600px;
+	padding: 25px;
+	font-size: 20px;
+	
+}
+.text1 textarea{
+	width: 300px;
+	height: 100px;
+}
 .rating {
 	position: absolute;
-	top:50%;
+	top:70%;
 	left: 50%;
 	transform: translate(-50%,-50%) rotateY(180deg);
 	display: flex;
@@ -328,7 +341,7 @@ button.car:hover{
 .rating label{
 	display: block;
 	cursor: pointer;
-	width: 50px;
+	width: 30px;
 	background:rgba(255, 255, 255, 0);
 
 }
@@ -337,7 +350,7 @@ button.car:hover{
 	content:'★';
 	position: relative;
 	display: block;
-	font-size: 24px;
+	font-size: 30px;
 	color: #000;
 }
 .rating label:after
@@ -345,12 +358,13 @@ button.car:hover{
 	content:'★';
 	position: absolute;
 	display: block;
-	font-size: 24px;
-	color: rgb(255, 238, 0);
+	font-size: 30px;
+	color: rgb(245, 199, 50);
 	top: 0;
+	
 	opacity: 0;
 	transition: .3s;
-	text-shadow: 0 2px 5px rgba(0,0,0,.5);
+	text-shadow: 0 ;
 }
 .rating label:hover:after,
 .rating label:hover ~ label:after,
@@ -483,6 +497,7 @@ text-decoration:underline;
 	padding: 25px;
 	font-size: 18px;
 	color: #000;
+	border: black;
 	
 }
 .table1{
@@ -490,6 +505,7 @@ text-decoration:underline;
 	left: 35%;
 	padding: 10px;
 	border-style: dashed;
+	margin-bottom: 30px;
 	font-size: 18px;
 	border-radius: 20px;
 	
@@ -511,6 +527,7 @@ text-decoration:underline;
 	border-radius: 20px;
 	padding: 5px 15px;
 	outline: none;
+	font-size: 20px;
 }
 .sub:hover{
 	background-color: #ddd;
@@ -533,4 +550,14 @@ td:hover{
 	padding: 10px;
 	font-size:18px ;
 	border-radius: 20px;
+}
+.pay{
+	position: absolute;
+	width: 1000px;
+	right: 0;
+	height: 150px;
+	background-color: rgb(207, 202, 202);
+}
+.pay h1{
+	fon
 }
