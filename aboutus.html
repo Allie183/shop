@@ -47,18 +47,50 @@
 <body>
     <div style="margin-top: 60px;">
         <div>
-          <a href="">
-              <img class="search" src="image/search.png" alt="">
-          </a>
-          <img class="top" src="image/car.png" onclick="show_cart()" alt="">
-          <a href="">
-              <img class="vip" src="image/vip.png" alt="">
-          </a>
+            <div>
+                <img src="" alt="">
+                <img class="search" src="image/search.png" onclick="show_text()" alt=" ">
+                <input type="text" id="search" placeholder="search...">
+                <img class="top" src="image/car.png" onclick="show_cart()" alt="">
+                <a href="login.html">
+                    <img class="vip" src="image/vip.png"   alt="">
+                </a>
+            </div>
+            <script>
+                var cart_state = false;
+                function show_cart(){
+                    if(cart_state){
+                        close_cart();
+                        cart_state = !cart_state;
+                    }
+                    else{
+                        document.getElementById("shopping-cart-detail").style.display ="block";
+                        cart_state = !cart_state;
+                    }
+                }
+                function close_cart(){
+                    document.getElementById("shopping-cart-detail").style.display = "none";
+                }
+            </script>
+            <script>
+                var search_state = false;
+              function show_text(){
+                  if(!search_state){
+                      document.getElementById("search").style.display="block"
+                  }
+                  else{
+                      document.getElementById("search").style.display="none"
+                      
+                  }
+                  search_state = !search_state;
+              }
+              
+            </script>
 
          
           
            
-          <div class="BOX_A">
+        <div class="BOX_A">
             <fieldset>
                 <ul>
                     <li>
@@ -86,7 +118,7 @@
                 </div>
             </fieldset>
         </div>
-        <!---------------------------------------吳季蓁區 ---------------------------------->
+        
         <div class="BOX_B">
             <fieldset>
                 
@@ -118,7 +150,7 @@
                 </div>
             </fieldset>
         </div>
-        <!---------------------------------------謝旻潔區 ---------------------------------->
+       
         <div class="BOX_C">
             <fieldset>
               
@@ -150,7 +182,7 @@
                 </div>
             </fieldset>
         </div>
-        <!---------------------------------------王弘毅區 ---------------------------------->
+       
         <div class="BOX_D">
             <fieldset>
                
@@ -183,5 +215,35 @@
             </fieldset>
         </div>
     </div>
+<div class="footer">
+    <table>
+      <tr><td colspan="3">© 2021 CODY STUDIO All rights reserved</td></tr>
+      <tr>
+        <td><img src="image/fb.png" alt=""></td>
+        <td><img src="image/ig.png" alt=""></td>
+        <td><a href="index.html"><img src="image/home.png" alt=""></a></td>
+       
+      </tr>
+    </table>
+    
+  
+    <table class="contact">
+      <tr><td colspan="2" style="font-size: 20px;">聯絡我們</td></tr>
+      <tr><td>服務時間:</td><td>週一至週日 A.M 10:00 - P.M 8:00</td></tr>
+      <tr><td>地址:</td><td>桃園市中壢區中北路200號</td></tr> 
+      <tr><td>郵件:</td><td>Codystudio@gmail.com</td></tr>
+
+
+    </table>
+    <table class="service">
+      <tr><td><a href="service.html" style="text-decoration:none;color: black;font-size: 20px;">運送及付款方式</a></td></tr>
+      <tr>
+        <td><img src="image/visa.png" alt=""></td><td><img src="image/paypal.png" alt=""></td><td><img src="image/mastercard.png" alt=""></td>
+      </tr>
+    
+    </table>
+
+  </div>
+ 
 </body>
 </html>

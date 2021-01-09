@@ -313,8 +313,9 @@ button.car:hover{
 
 .text1{
 	position: absolute;
-	top: 100%;
-	left: 25%;
+	top: 90%;
+	left: 20%;
+	
 	width: 1700px;
 	height: 600px;
 	padding: 25px;
@@ -497,7 +498,8 @@ text-decoration:underline;
 }
 .table1{
 	position: absolute;
-	left: 35%;
+	left: 5%;
+	top: 10%;
 	padding: 10px;
 	border-style: dashed;
 	margin-bottom: 30px;
@@ -532,7 +534,7 @@ text-decoration:underline;
 .sub:active{
 	transform: translateY(4px);
 }
-tr,td{
+.table1 tr,td{
 	font-weight: bolder;
 	padding: 10px 20px;
 }
@@ -541,11 +543,19 @@ td:hover{
 }
 .table2{
 	position: absolute;
-	left: 30%;
-	padding: 10px;
+	left: 35%;
+	top: 10%;
+	bottom: 20%;
+	width: 450px;
 	font-size:18px ;
 	border-radius: 20px;
+	padding-top:10px ;
+	border-style: dashed;
+	
+
 }
+
+
 .pay{
 	position: absolute;
 	width: 1150px;
@@ -574,6 +584,7 @@ td:hover{
 	width: 60px;
 	height: 60px;
 }
+
 .payall{
 	position: absolute;
 	width: 1000px;
@@ -632,86 +643,66 @@ td:hover{
 	left: 300px;
 	font-size: 28px;
 }
+
+.footer{
+	position: absolute;
+	top: 150%;
+	left: 20%;
+	width: 1520px;
+	height: 250px;
+	margin-bottom: 40px;
+    clear:both;
+
+}
+
+
+.footer img:active{
+	transform: translateY(4px);
+	border: none;
+	outline: none;
+}
+.footer img{
+	width: 50px;
+	height: 50px;
+}
+.footer table{
+	position: absolute;
+	margin: 30px;
+	font-size: 12px;
+}
+.contact{
+	position: absolute;
+	left: 25%;
+
+}
+.service{
+	position: absolute;
+	left: 50%;
+	color: #000;
+
+	
+}
 .BOX_A {
 	width:21%;
 	position: absolute;
 	left:20% ;
 	margin-left: 5%;
-	
-	
-	}
-	.BOX_B {
-		width:21%;
+}
+.BOX_B {
+	width:21%;
 	position: absolute;
-		
-		left: 50%;
-	}
-	.BOX_C {
+	left: 50%;
+}
+.BOX_C {
 	width:21%;
 	position: absolute;
 	margin-left:5%;
 	left: 30%;
-	top: 50%;
-	}
-	.BOX_D {
+	top: 60%;
+}
+.BOX_D {
 	width:21%;
 	position: absolute;
 	left: 60%;
-	top:50%;
-	}
-	li{
-		font-size:20px;
-		font-family: 微軟正黑體;
-	}
-	h1{
-		letter-spacing: 30px;
-		color:#003D79;
-		font-weight: 700;
-	}
-	.test{
-		padding: 0.5em;
-		font-family: 新細明體;
-		font-size: 1.17em;
-		line-height: 1.5em;
-		letter-spacing: 0.1em;
-		display: block;
-		text-align: justify;
-		display: none;
-	}
-	.a
-	{
-	width: 36px;
-	background-color:#FCFCFC;
-	}
-	.a:hover
-	{
-	transform:scale(1.25,1.25);
-	transition:transform 0.25s ease;
-	}
-	#Footer {
-	float: left;
-	width: 100%;
-	bottom: 0px;
-	background-color:#FCFCFC;
-	margin-top: 10%;
-	}
-	.pp{
-		transition-property: width, height;
-	transition-duration: 1s;
-	}
-	.pp:hover{
-		width: 100%;
-	}
-	table
-	{
-		font-family:"微軟正黑體";
-		font-size: 30px;
-		margin-left:auto; 
-		margin-right:auto;
-		border:5px #cccccc solid;
-	
-	}
-	
-	form{
-		margin-top: 30%;
-	}
+	top:60%;
+}
