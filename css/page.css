@@ -174,11 +174,6 @@ button.car:hover{
 	right: 0;
 	border-radius: 2px 0 0 2px;
   }
-  
-  
-  
-  
-  
   .text {
 	color: #f2f2f2;
 	font-size: 15px;
@@ -553,13 +548,89 @@ td:hover{
 }
 .pay{
 	position: absolute;
-	width: 1000px;
+	width: 1150px;
 	right: 0;
 	height: 150px;
 	background-color: rgb(207, 202, 202);
 }
 .pay h1{
-	fon
+	padding: 30px;
+	padding-left: 60px;
+	color: #000;
+}
+.pay h1:hover{
+	color: antiquewhite;
+}
+.trans table{
+	position: absolute;
+	width: 1100px;
+	font-size: 24px;
+	color: #696969;
+	left: 25%;
+	top: 25%;
+}
+
+.table2 img{
+	width: 60px;
+	height: 60px;
+}
+.payall{
+	position: absolute;
+	width: 1000px;
+	height: 500px;
+	left: 10%;
+	margin: 50px;
+	
+}
+.delivery{
+	position: absolute;
+	left:40%;
+	top: -2%;
+	
+}
+.delivery1{
+	font-size: 18px;
+}
+.add{
+	font-size: 16px;
+}
+.payanddelivery{
+	position: absolute;
+	top: -10%;
+	left: 10%;
+}
+
+.order{
+	position: absolute;
+	top: 230%;
+	left: 70%;
+	font-size: 16px;
+	padding: 10px;
+	border-radius: 20px;
+	border: none;
+	outline: none;
+	font-weight: bolder;
+}
+.order:hover{
+	color: #8aa5fc;
+}
+.order:active{
+	transform: translateY(4px);
+	font-weight: bolder;
+	outline: none;
+}
+
+.step1{
+	margin-left: 50px;
+	color:grey;
+	position: absolute;
+	font-size: 28px;
+	
+}
+.step2{
+	position: absolute;
+	left: 300px;
+	font-size: 28px;
 }
 .BOX_A {
 	width:21%;
