@@ -561,3 +561,86 @@ td:hover{
 .pay h1{
 	fon
 }
+.BOX_A {
+	width:21%;
+	position: absolute;
+	left:20% ;
+	margin-left: 5%;
+	
+	
+	}
+	.BOX_B {
+		width:21%;
+	position: absolute;
+		
+		left: 50%;
+	}
+	.BOX_C {
+	width:21%;
+	position: absolute;
+	margin-left:5%;
+	left: 30%;
+	top: 50%;
+	}
+	.BOX_D {
+	width:21%;
+	position: absolute;
+	left: 60%;
+	top:50%;
+	}
+	li{
+		font-size:20px;
+		font-family: 微軟正黑體;
+	}
+	h1{
+		letter-spacing: 30px;
+		color:#003D79;
+		font-weight: 700;
+	}
+	.test{
+		padding: 0.5em;
+		font-family: 新細明體;
+		font-size: 1.17em;
+		line-height: 1.5em;
+		letter-spacing: 0.1em;
+		display: block;
+		text-align: justify;
+		display: none;
+	}
+	.a
+	{
+	width: 36px;
+	background-color:#FCFCFC;
+	}
+	.a:hover
+	{
+	transform:scale(1.25,1.25);
+	transition:transform 0.25s ease;
+	}
+	#Footer {
+	float: left;
+	width: 100%;
+	bottom: 0px;
+	background-color:#FCFCFC;
+	margin-top: 10%;
+	}
+	.pp{
+		transition-property: width, height;
+	transition-duration: 1s;
+	}
+	.pp:hover{
+		width: 100%;
+	}
+	table
+	{
+		font-family:"微軟正黑體";
+		font-size: 30px;
+		margin-left:auto; 
+		margin-right:auto;
+		border:5px #cccccc solid;
+	
+	}
+	
+	form{
+		margin-top: 30%;
+	}
