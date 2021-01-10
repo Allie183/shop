@@ -264,7 +264,7 @@ button.car:hover{
 	right: 0;
 	height: calc(100% - 50px);
 	width: 350px;
-	background-color: rgb(46, 43, 43);
+	background-color: rgb(85, 82, 82);
     z-index: 99;
 }
 
@@ -315,7 +315,6 @@ button.car:hover{
 	position: absolute;
 	top: 90%;
 	left: 20%;
-	
 	width: 1700px;
 	height: 600px;
 	padding: 25px;
@@ -705,4 +704,68 @@ td:hover{
 	position: absolute;
 	left: 60%;
 	top:60%;
+}
+.buy{
+	position: absolute;
+	width: 800px;
+	left: 30%;
+	top: 5%;
+	font-size: 30px;
+	font-weight: bolder;
+}
+.buy tr,td{
+	padding: 0;
+
+}
+.buy button{
+	position: relative;
+	left: 80%;
+	top: 3%;
+	font-size: 20px;
+	font-weight: bolder;
+	padding: 5px 10px;
+	border: none;
+	border-radius: 20px;
+	outline: none;
+	background-color: white;
+	border-radius: 20px;
+
+	
+}
+.buy button:hover{
+	color: rgb(114, 144, 241);
+	
+}
+.buy button:active{
+	border-radius: 20px;
+	transform: translateY(4px);
+}
+.buy button input[type="radio"] {
+	border-radius: 20px;
+	background-color: #110808;
+}
+.buy button label{
+	position: relative;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border-radius: 20px;
+	
+}
+
+.buy button span {
+	display: inline-block;
+	padding: 10px;
+	text-transform: uppercase;
+	border-radius: 20px;
+	border: 2px solid gray;
+	color: black;
+	
+}
+.buy button input[type="radio"]:checked + span {
+	background-color: #c4bcbc;
+	color: black;
+	border-radius: 20px;
+	color: rgb(114, 144, 241);
+
+	
 }
