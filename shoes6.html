@@ -3,40 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/activity.css">
     <title>CODY韓國代購</title>
+    <link rel="stylesheet" href="css/activity.css">
     <link rel="stylesheet" href="css/page.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <header>
         <a href="https://allie183.github.io/shop/.">
         <img class="logo" src="image/logo.png" alt="">
         </a>
-        <ul class="page">
-            <a href="sale.html" style="text-decoration:none">
-                <li class="brand ">
-                    SALE
-                </li></a>
-                <a href="top.html" style="text-decoration:none">
-                <li class="brand ">
-                    TOP
-                </li></a>
-                <a href="bottom.html" style="text-decoration:none">
-                <li class="brand ">
-                    BOTTOM
-                </li></a>
-                <a href="shoes.html" style="text-decoration:none">
-                <li class="brand ">
-                    SHOES
-                </li></a>
-                <a href="makeup.html" style="text-decoration:none">
-                <li class="brand ">
-                    MAKEUP
-                </li></a>
-                <a href="aboutus.html" style="text-decoration:none">
-                <li class="brand">
-                    ABOUT US
-                </li></a>
-            </ul>
+        <ul class="page">  
+        <a href="sale.html" style="text-decoration:none">
+        <li class="brand ">
+           <span>SALE</span> 
+        </li></a>
+        <a href="top.html" style="text-decoration:none">
+        <li class="brand ">
+           <span>TOP</span> 
+        </li></a>
+        <a href="bottom.html" style="text-decoration:none">
+        <li class="brand ">
+          <span>BOTTOM</span> 
+        </li></a>
+        <a href="shoes.html" style="text-decoration:none">
+        <li class="brand ">
+          <span>SHOES</span> 
+        </li></a>
+        <a href="makeup.html" style="text-decoration:none">
+        <li class="brand ">
+          <span>MAKEUP</span> 
+        </li></a>
+       
+        <a href="aboutus.html" style="text-decoration:none;",>
+        <li class="brand">
+          <span >ABOUT US</span> 
+        </li></a>	
+        
+    </ul>
         
       </header>
       <script>
@@ -112,7 +114,7 @@
                   <img src="image/x-mark.png" alt="" style="width:20px;height: 20px;margin-left: 325px;">
               </div>
                  <div class="detail-button-container">
-                  <button class="beautiful-button" onclick="close_cart()">訂單結帳</button>
+                  <a href="buy1.html"><button class="beautiful-button" onclick="close_cart()">訂單結帳</button></a>
                   
               </div>
           </div>
@@ -143,14 +145,13 @@
           
         </div>
         
-      
-        
         <div class="mySlides fade">
           
           <img src="image/mlb3.jpg" style="width:100%">
           
         </div>
-      
+        
+        
         
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
@@ -161,8 +162,7 @@
         <div class="dott">
           <span class="dot" onclick="currentSlide(1)"></span> 
           <span class="dot" onclick="currentSlide(2)"></span> 
-          
-          
+         
          
         </div>
         
@@ -196,16 +196,19 @@
         </script>
     <form action="addcart.jsp" method="GET">
         <h2>[MLB]  Disney 聯名款老爹鞋</h2>
-        <inpput type="hidden" name="id">
-        
-        <b>NT$ 2,650
-                   
-        </b>
+        <input type="hidden" name="" value="[MLB]  Disney 聯名款老爹鞋">
+        <input type="hidden"  name="" value="239">
+        <p>
+            <b>NT$ 2,650
+               
+            </b>
+         </p>
         </div>
-       
-        <div class="size">
-            <p style="font-size:16px">尺寸</p>	
+        <div class="color" style="margin-bottom: 0">
+            <p style="font-size:16px">色號</p>	
             <p id="button">
+        
+              <p id="button">
                 <span style="border: none;"><label><input type="radio" name="button" value="1"><span>White-230</span></label></span>
                     <span style="border: none;"><label><input type="radio" name="button" value="2"><span>White-240</span></label></span>
                     <span style="border: none;"><label><input type="radio" name="button" value="3"><span>White-250</span></label></span>
@@ -213,8 +216,12 @@
                     <span style="border: none;"><label><input type="radio" name="button" value="5"><span>White-270</span></label></span>
                     <span style="border: none;"><label><input type="radio" name="button" value="6"><span>White-280</span></label></span>
                 </p>
+       
+        
+        
+        </p>
            
-
+            
         </div>
         
         
@@ -229,11 +236,15 @@
             
         </div>
 
+
         <button type="submit" class="car"  style="margin-top:30px">加入購物車</button>
         
         <button type="submit" class="car"  style="margin-top:30px">結帳</button>
          
     </form>
+    
+   
+   
 <div class="text1">
       <table class="table1">
         <tr style="text-align: center;"><td colspan="2">商品評分</td></tr> 
