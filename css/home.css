@@ -187,7 +187,7 @@ body {
 	position: absolute;
 	top: 165%;
 	width: 1700px;
-	height: 450px;
+	height: 500px;
 	padding: 30px;
 	background-color: rgb(207, 202, 202);
 }
@@ -266,7 +266,7 @@ td:hover{
 }
 .footer{
 	position: absolute;
-	top: 226%;
+	top: 230%;
 	width: 1520px;
 	height: 250px;
 	margin-bottom: 40px;
@@ -310,42 +310,3 @@ td:hover{
 	border:solid 3px #615959;
 	outline: none;
 }
-.rating {
-	position: absolute;
-	top:82%;
-	left: 53%;
-	transform: translate(-50%,-50%) rotateY(180deg);
-	display: flex;
-}
-.rating input{display:none;}
-.rating label{
-	display: block;
-	cursor: pointer;
-	width: 24px;
-	background:rgba(255, 255, 255, 0);
-
-}
-.rating label:before
-{
-	content:'★';
-	position: relative;
-	display: block;
-	font-size: 24px;
-	color: #000;
-}
-.rating label:after
-{
-	content:'★';
-	position: absolute;
-	display: block;
-	font-size: 24px;
-	color: rgb(255, 238, 0);
-	top: 0;
-	opacity: 0;
-	transition: .3s;
-	text-shadow: 0 2px 5px rgba(0,0,0,.5);
-}
-.rating label:hover:after,
-.rating label:hover ~ label:after,
-.rating input:checked ~ label:after
-{opacity: 1;}

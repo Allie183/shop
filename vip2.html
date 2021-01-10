@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/activity.css">
+    <link rel="stylesheet" href="css/page.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <title>會員資料</title>
+    
+    <header>
+        <a href="https://allie183.github.io/shop/.">
+        <img class="logo" src="image/logo.png" alt="">
+        </a>
+        <ul class="page">  
+        <a href="sale.html" style="text-decoration:none">
+        <li class="brand ">
+           <span>SALE</span> 
+        </li></a>
+        <a href="top.html" style="text-decoration:none">
+        <li class="brand ">
+           <span>TOP</span> 
+        </li></a>
+        <a href="bottom.html" style="text-decoration:none">
+        <li class="brand ">
+          <span>BOTTOM</span> 
+        </li></a>
+        <a href="shoes.html" style="text-decoration:none">
+        <li class="brand ">
+          <span>SHOES</span> 
+        </li></a>
+        <a href="makeup.html" style="text-decoration:none">
+        <li class="brand ">
+          <span>MAKEUP</span> 
+        </li></a>
+       
+        <a href="aboutus.html" style="text-decoration:none;",>
+        <li class="brand">
+          <span >ABOUT US</span> 
+        </li></a>	
+        
+    </ul>
+        
+      </header>
+    
+</head>
+<body style="background-color: rgb(205, 209, 212);"> 
+
+
+
+   
+    
+    <div class="col-md-9 column headME"style="height:400px;width:450px; margin-left:400px; margin-top:50px;">
+        <h1 style="font-size: 45px; font-family: '微軟正黑體';">修改基本資料</h1>
+        <label style="position: absolute; top: 30%;margin: 20px;">姓名:<input type="text"></label>
+        <label style="position: absolute; top: 40%;margin: 20px;">帳號:<input type="text"></label>
+        <label style="position: absolute; top: 50%;margin: 20px;">密碼:<input type="text"></label>
+        <button class="button" style="position: absolute; top: 65%;left: 50%; " onclick="location.href='vip.html'">儲存</button>
+      
+       
+    
+        <img class="mySlidespaper" src="image/paper1.jpg">
+            <img class="mySlidespaper" src="image/paper2.jpg">
+            <img class="mySlidespaper" src="image/paper3.jpg">
+            <img class="mySlidespaper" src="image/paper4.jpg">
+            <img class="mySlidespaper" src="image/paper5.jpg">
+
+    </div>
+    
+
+    <div style="margin-left:400px ;">
+        
+       
+        
+    </div>
+
+    
+      
+      <script>
+        var myIndex = 0;
+        carousel();
+        
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlidespaper");
+            for (i = 0; i < x.length; i++) {
+               x[i].style.display = "none";  
+            }
+            myIndex++;
+            if (myIndex > x.length) {myIndex = 1}    
+            x[myIndex-1].style.display = "block";  
+            setTimeout(carousel, 2000); // Change image every 2 seconds
+        }
+        </script>
+       
+
+
+
+
+
+<div class="footer" style="top: 100%;">
+    <table>
+      <tr><td colspan="3">© 2021 CODY STUDIO All rights reserved</td></tr>
+      <tr>
+        <td><img style="width: 50px;" src="image/fb.png" alt=""></td>
+        <td><img src="image/ig.png" alt=""></td>
+        <td><a href="index.html"><img src="image/home.png" alt=""></a></td>
+       
+      </tr>
+    </table>
+    
+  
+    <table class="contact">
+      <tr><td colspan="2" style="font-size: 20px;">聯絡我們</td></tr>
+      <tr><td>服務時間:</td><td>週一至週日 A.M 10:00 - P.M 8:00</td></tr>
+      <tr><td>地址:</td><td>桃園市中壢區中北路200號</td></tr> 
+      <tr><td>郵件:</td><td>Codystudio@gmail.com</td></tr>
+
+
+    </table>
+    <table class="service">
+      <tr><td><a href="service.html" style="text-decoration:none;color: black;font-size: 20px;">運送及付款方式</a></td></tr>
+      <tr>
+        <td><img src="image/visa.png" alt=""></td><td><img src="image/paypal.png" alt=""></td><td><img src="image/mastercard.png" alt=""></td>
+      </tr>
+    
+    </table>
+
+  </div>
+ 
+</body>
+</html>

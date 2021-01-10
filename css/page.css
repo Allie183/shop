@@ -327,7 +327,7 @@ button.car:hover{
 }
 .rating {
 	position: absolute;
-	top:70%;
+	top:75%;
 	left: 50%;
 	transform: translate(-50%,-50%) rotateY(180deg);
 	display: flex;
@@ -505,6 +505,9 @@ text-decoration:underline;
 	font-size: 18px;
 	border-radius: 20px;
 	
+}
+.table1 tr,td{
+	padding: 10px;
 }
 .error{
 	border-style: dashed;
