@@ -86,6 +86,22 @@
               }
               
             </script>
+            <script>
+                var cart_state = false;
+                function show_cart(){
+                    if(cart_state){
+                        close_cart();
+                        cart_state = !cart_state;
+                    }
+                    else{
+                        document.getElementById("shopping-cart-detail").style.display ="block";
+                        cart_state = !cart_state;
+                    }
+                }
+                function close_cart(){
+                    document.getElementById("shopping-cart-detail").style.display = "none";
+                }
+              </script>
 
          
           
@@ -215,6 +231,7 @@
             </fieldset>
         </div>
     </div>
+
 <div class="footer">
     <table>
       <tr><td colspan="3">© 2021 CODY STUDIO All rights reserved</td></tr>
